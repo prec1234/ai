@@ -1,0 +1,30 @@
+print("Chatbot: Hello! Welcome to my chatbot.")
+print("Chatbot: You can ask me something.")
+
+while True:
+    user = input("You: ").lower()
+
+    if "hello" in user or "hi" in user:
+        print("Chatbot: Hello! How are you?")
+
+    elif "how are you" in user:
+        print("Chatbot: I am fine. What about you?")
+
+    elif "your name" in user:
+        print("Chatbot: I am a simple Python chatbot.")
+
+    elif "college" in user:
+        print("Chatbot: College is a place to learn new things.")
+
+    elif "python" in user:
+        print("Chatbot: Python is a popular programming language.")
+
+    elif "thank" in user:
+        print("Chatbot: You are welcome!")
+
+    elif "bye" in user:
+        print("Chatbot: Goodbye! Have a nice day.")
+        break
+
+    else:
+        print("Chatbot: Sorry, I don't understand.")
