@@ -1,0 +1,44 @@
+def intelligent_number_agent():
+    print("Intelligent Number Guessing Agent")
+    print("---------------------------------")
+
+    low = 1
+    high = 100
+    attempts = 0
+
+    print("Think of a number between 1 and 100.")
+    print("The agent will try to guess it.")
+
+    while low <= high:
+        
+        guess = (low + high) // 2
+        attempts += 1
+
+        print("\nAgent's guess:", guess)
+
+        feedback = input(
+            "Enter feedback (higher / lower / correct): "
+        ).lower()
+
+        if feedback == "correct":
+            print("\nThe agent guessed the number!")
+            print("Number of attempts:", attempts)
+            break
+
+        elif feedback == "higher":
+            
+            low = guess + 1
+
+        elif feedback == "lower":
+            
+            high = guess - 1
+
+        else:
+            print("Invalid feedback. Please enter higher, lower, or correct.")
+
+    else:
+        print("\nInconsistent feedback received.")
+
+
+
+intelligent_number_agent()
