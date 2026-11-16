@@ -3,14 +3,14 @@
 N = 8
 
 def print_board(board):
-    """Print the chessboard with queens."""
+   
     for row in board:
         print(" ".join("Q" if cell else "." for cell in row))
     print()
 
 
 def is_safe(board, row, col):
-    """Check if a queen can be placed at board[row][col]."""
+    
 
     
     for i in range(col):
@@ -37,7 +37,7 @@ def is_safe(board, row, col):
 
 
 def solve_queens(board, col):
-    """Solve the problem using backtracking."""
+    
 
     
     if col >= N:
@@ -72,17 +72,3 @@ else:
 
 
     
-'''
-OUTPUT=
-Solution Found:
-
-Q . . . . . . .
-. . . . . . Q .
-. . . . Q . . .
-. . . . . . . Q
-. Q . . . . . .
-. . . Q . . . .
-. . . . . Q . .
-. . Q . . . . .
-
-'''
